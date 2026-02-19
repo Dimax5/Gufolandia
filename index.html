@@ -7,12 +7,13 @@
     <style>
         /* base */
         :root {
-            --primary-color: #1e3a8a; /* deep blue */
-            --secondary-color: #2563eb; /* bright blue */
-            --accent-color: #fbbf24; /* yellow accent */
-            --bg-color: #e0e7ff; /* pale blue background */
-            --text-color: #1f2937; /* dark slate */
+            --primary-color: #0d47a1; /* richer blue */
+            --secondary-color: #1976d2; /* sky blue */
+            --accent-color: #ffeb3b; /* yellow accent */
+            --bg-color: #e3f2fd; /* light blue */
+            --text-color: #0e1a2b; /* very dark blue */
             --card-bg: #ffffff;
+            --owl-emoji: "🦉";
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,12 +37,21 @@
             color: var(--primary-color);
         }
         .container {
+            position: relative;
             max-width: 800px;
             margin: 2rem auto;
             background: var(--card-bg);
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .container::before {
+            content: var(--owl-emoji);
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 5rem;
+            opacity: 0.05;
         }
         .highlight {
             font-weight: bold;
@@ -68,20 +78,20 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="pio.html">Pio Esposito</a>
+        <a href="index.html">🦉 detentore del titolo 2025/2026</a> |
+        <a href="pio.html">🦉 Pio Esposito</a>
     </nav>
     <div class="container">
-    <h1>Benvenuto nel sito dedicato a <span class="highlight">Antonio Vitelli</span></h1>
+    <h1>🦉 Benvenuto nel sito dedicato a <span class="highlight">Antonio Vitelli</span></h1>
 
     <section>
-        <h2>Chi è il Gufo?</h2>
+        <h2>🦉 Chi è il Gufo?</h2>
         <p>Antonio Vitelli, soprannominato <strong>"Il Gufo"</strong>, è un appassionato di fantacalcio con una fede incrollabile nella sua squadra. È famoso tra gli amici per i suoi "gufi" portafortuna e per l'energia che mette in ogni match. Tuttavia, la sua dedizione non deve trasformarsi in ossessione.</p>
         <p>Il messaggio principale è chiaro: il fantacalcio è divertimento e non può occupare ogni momento della giornata.</p>
     </section>
 
     <section>
-        <h2>La vita va oltre il fantacalcio</h2>
+        <h2>🦉 La vita va oltre il fantacalcio</h2>
         <p>Non si può passare tutte le giornate a "gufare" sperando nella vittoria della propria squadra. Esistono tanti altri aspetti della vita quotidiana oltre al fantacalcio:</p>
         <ul>
             <li>famiglia</li>
@@ -97,13 +107,14 @@
     </section>
 
     <section>
-        <h2>Un titolo già conquistato</h2>
+        <h2>🦉 Un titolo già conquistato</h2>
         <p>Nonostante tutto, Antonio ha già dimostrato il suo valore: ha vinto sicuramente il fantacalcio chiamato <strong>CAMPIONATO MALEDETTO</strong>. Questo successo dimostra che il talento e la passione pagano, ma ora è il momento di festeggiare e di guardare avanti, continuando a vivere la vita a pieno.</p>
         <p>Scopri anche l'importanza di <a href="pio.html">Pio Esposito</a> nella squadra di Gufolandia.</p>
     </section>
 
     <footer>
-        <p>&copy; 2026 - Pagina illustrativa sul mito del Gufo</p>
+        <p>&copy; 2026 - Pagina illustrativa sul mito del Gufo 🦉</p>
+        <p>Grafica a tema gufo e tono blu ispirato a Leghe FC</p>
     </footer>
     </div>
 </body>

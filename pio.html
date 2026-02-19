@@ -7,12 +7,13 @@
     <style>
         /* base */
         :root {
-            --primary-color: #1e3a8a; /* deep blue */
-            --secondary-color: #2563eb; /* bright blue */
-            --accent-color: #fbbf24; /* yellow accent */
-            --bg-color: #e0e7ff; /* pale blue background */
-            --text-color: #1f2937; /* dark slate */
+            --primary-color: #0d47a1; /* richer blue */
+            --secondary-color: #1976d2; /* sky blue */
+            --accent-color: #ffeb3b; /* yellow accent */
+            --bg-color: #e3f2fd; /* light blue */
+            --text-color: #0e1a2b; /* very dark blue */
             --card-bg: #ffffff;
+            --owl-emoji: "🦉";
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,12 +37,21 @@
             color: var(--primary-color);
         }
         .container {
+            position: relative;
             max-width: 800px;
             margin: 2rem auto;
             background: var(--card-bg);
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .container::before {
+            content: var(--owl-emoji);
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 5rem;
+            opacity: 0.05;
         }
         .highlight {
             font-weight: bold;
@@ -58,11 +68,11 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="pio.html">Pio Esposito</a>
+        <a href="index.html">🦉 detentore del titolo 2025/2026</a> |
+        <a href="pio.html">🦉 Pio Esposito</a>
     </nav>
     <div class="container">
-    <h1>L'importanza di <span class="highlight">Pio Esposito</span></h1>
+    <h1>🦉 L'importanza di <span class="highlight">Pio Esposito</span></h1>
 
     <section>
         <h2>Il ruolo nella squadra</h2>
@@ -80,8 +90,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 - Pagina dedicata a Pio Esposito in Gufolandia</p>
-        <p><a href="index.html">Torna alla pagina principale</a></p>
+        <p>&copy; 2026 - Pagina dedicata a Pio Esposito in Gufolandia</p>        <p>Uno stile blu con omaggi ai gufi per i fan del fantacalcio</p>        <p><a href="index.html">Torna alla pagina principale</a></p>
     </footer>
     </div>
 </body>
