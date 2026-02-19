@@ -5,19 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pio Esposito - Gufolandia</title>
     <style>
+        /* base */
+        :root {
+            --primary-color: #004d40;
+            --secondary-color: #009688;
+            --accent-color: #ffab00;
+            --bg-color: #e0f2f1;
+            --text-color: #212121;
+            --card-bg: #ffffff;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            margin: 2rem;
-            background-color: #fdfdfd;
-            color: #333;
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        nav {
+            background: var(--primary-color);
+            padding: 0.5rem 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            font-weight: bold;
         }
         h1, h2 {
-            color: #2c3e50;
+            color: var(--primary-color);
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         .highlight {
             font-weight: bold;
-            color: #2980b9;
+            color: var(--accent-color);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: var(--primary-color);
+            color: #fff;
+            margin-top: 2rem;
         }
     </style>
 </head>
@@ -26,6 +61,7 @@
         <a href="index.html">Home</a> |
         <a href="pio.html">Pio Esposito</a>
     </nav>
+    <div class="container">
     <h1>L'importanza di <span class="highlight">Pio Esposito</span></h1>
 
     <section>
@@ -47,5 +83,6 @@
         <p>&copy; 2026 - Pagina dedicata a Pio Esposito in Gufolandia</p>
         <p><a href="index.html">Torna alla pagina principale</a></p>
     </footer>
+    </div>
 </body>
 </html>
